@@ -48,6 +48,53 @@ document.addEventListener("DOMContentLoaded", function () {
     // typewriter3.typeString(text3).pauseFor(2000).start();
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // CHANGED: Renamed function and updated its behavior
+    function animateItems() {
+        timelineItems.forEach(item => {
+            if (isElementInViewport(item)) {
+                item.classList.add('visible');
+            } else {
+                // NEW: Remove 'visible' class if item is not in viewport
+                item.classList.remove('visible');
+            }
+        });
+    }
+
+    // CHANGED: Call animateItems instead of showVisibleItems
+    animateItems();
+
+    // NEW: Throttle function to limit the rate at which animateItems is called
+    function throttle(func, limit) {
+        let inThrottle;
+        return function() {
+            const args = arguments;
+            const context = this;
+            if (!inThrottle) {
+                func.apply(context, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        }
+    }
+
+    // CHANGED: Use throttle function when adding scroll event listener
+    window.addEventListener('scroll', throttle(animateItems, 100));
+});
+  
+  
 
 // var app = document.querySelector('.title')
 // var customNodeCreator = function(character) {
@@ -57,6 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //   var typewriter = new Typewriter(app, {
 //     loop: true,
 //     delay: 75,
+
+
 //     onCreateTextNode: customNodeCreator,
 //   });
 
