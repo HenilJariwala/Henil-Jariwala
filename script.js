@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', throttle(animateItems, 100));
 });
   
-  
+
 
 // var app = document.querySelector('.title')
 // var customNodeCreator = function(character) {
