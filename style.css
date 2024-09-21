@@ -58,7 +58,9 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: gray;
 }
 
 .logo:hover {
@@ -151,7 +153,7 @@ a:hover {
 section {
   padding-top: 4vh;
   /* height: 96vh; */
-  margin: 0 10rem;
+  margin: 3rem 8rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -222,6 +224,11 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  filter: grayscale(100%);
+}
+
+.icon:hover {
+  filter: grayscale(0%);
 }
 
 /* Button */
@@ -425,7 +432,6 @@ p {
 /* Hackathons */
 #hackathons {
   margin: 3rem auto;
-  margin-bottom: 10rem;
 }
 
 h2 {
@@ -481,11 +487,11 @@ h2 {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -505,23 +511,63 @@ h2 {
   right: -16px;
 }
 
-@media screen and (max-width: 600px) {
-  .timeline::after {
-      left: 31px;
-  }
-  
-  .timeline-item {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-  }
-  
-  .timeline-item.right {
-      left: 0%;
-  }
-  
-  .content::after {
-      left: -16px;
-  }
+/* Contact */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
 }
 
+.contact-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Aligns the image and text horizontally */
+  margin: 1rem 1rem; /* Adds some spacing between the contact items */
+}
+
+h3{
+  padding: 8px;
+}
+
+.linkedin-text{
+  cursor: pointer;
+}
+
+.linkedin-text:hover{
+  text-decoration: underline;
+  text-decoration-color: gray;
+  color: #333;
+  text-underline-offset: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+  }
+
+  .content::after {
+    left: -16px;
+  }
+}
