@@ -1,8 +1,50 @@
-@media screen and (max-width:1200px){
+/* @media screen and (max-width:1200px){
     #desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
+        margin: 2rem;
+        text-align: left;
+    }
+
+    #section{
+        height: fit-content;
     }
 }
+
+@media screen and (max-width: 1400px){
+    #profile{
+            height: 83vh;
+            margin-bottom: 6rem;
+    }
+
+    .about-container{
+        flex-wrap: wrap;
+    }
+
+    #contact , #hackathons{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .timeline-item.right {
+      left: 0%;
+    }
+  
+    .content::after {
+      left: -16px;
+    }
+  }
+   */
