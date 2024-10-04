@@ -1,235 +1,303 @@
-
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: auto;
-      margin-bottom: 4rem;
-    }
-  
-    .about-container {
-      flex-wrap: wrap;
-    }
-  
-    #contact,
-    #hackathons {
-      height: fit-content;
-    }
+  #profile {
+    height: auto;
+    margin-bottom: 4rem;
   }
-  
-  @media screen and (max-width: 1200px) {
-   
-    
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-      margin: 0 0.1rem;
-      gap: 2rem;
-    }
-  
-    .logo {
-      font-size: 2rem;
-    }
-    .hamburger-menu {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    #profile,
-    .section-container {
-      display: block;
-    }
-  
-    #profile {
-      justify-content: center;
-      margin: 0 5%;
-      max-width: 90vw;
-    }
-  
-    #section,
-    .section-container {
-      height: fit-content;
-      justify-content: center;
-    }
-  
-    section {
-      margin: 0 5%;
-      width: 100%;
-      max-width: 90vw;
-    }
-  
-    .section-container{
-      margin: 0 auto;
-    }
-    .details-containers {
-      font-size: 1.1rem; /* Slightly smaller text */
-      padding: 1.5rem;
-      max-width: 80vw;
-    }
-    .about_pic-container {
-      width: 80vw;
-      justify-content: center;
-      margin: 1rem ;
-    }
-    .section__text {
-      margin: 0 5%;
-      width: max-content;
-      width: 85vw;
-    }
-  
-    .education {
-      margin: 0 0.5rem;
-    }
-    .education-item {
-      max-width: 90vw;
-    }
-  
-    
-    #about {
-      max-width: 90vw;
-    }
-    .education-item {
-      width: fit-content;
-      padding: 1rem;
-    }
-  
-    .skills {
-      padding: 1rem;
-      align-items: center;
-      width: 80%;
-      justify-content: center;
-    }
-  
-    .skills-section {
-      padding: 1rem;
-      gap: 1rem;
-      max-width: 95vw;
-    }
-  
-    .skills-subsection {
-      max-width: 80vw;
-      padding: 1.5rem;
-      gap: 1rem;
-    }
-  
-    #hackathons {
-      max-width: 83vw;
-      margin: 0 1rem;
-      justify-content: center;
-    }
-  
-    .timeline-item-left-visible,
-    .timeline-item-right-visible {
-      padding: 1rem;
-    }
-  
-    .content {
-      padding: 15px; /* Adjust padding as needed */
-      width: 100%; /* Use full width of the parent */
-      max-width: 100%; /* Prevent it from exceeding the viewport */
-      margin: 0 10px; /* Add some margin for spacing */
-      box-sizing: border-box; /* Include padding in the total width */
-    }
-  
-    .contact-container {
-      flex-direction: column; /* Stack items vertically */
-      width: 100%; /* Full width of the screen */
-      box-shadow: none; /* Reduce box-shadow for mobile */
-      padding: 1rem; /* Add padding for a mobile-friendly layout */
-      border-radius: 5px;
-    }
-  
-    
-  
-    .timeline::after {
-      left: 20px; /* Adjusted for better alignment */
-    }
-  
-    .timeline-item {
-      width: 100%;
-      padding: 0.2rem; /* Reduced padding for better fit */
-     
-    }
-  
-    .timeline-item.right {
-      left: 0%; /* Keeps right items aligned */
-    }
-  
-    .content::after {
-      left: -10px; /* Adjusted for better positioning */
-    }
-  
-    .contact-item {
-      margin: 0.5rem 0; /* Reduce the margin for mobile */
-      width: 100%; /* Make the contact items take full width */
-      justify-content: flex-start;
-    }
-  
-    .nav-links1 {
-      flex-direction: column; /* Stack items vertically */
-      gap: 1rem; /* Reduce the gap between items */
-      font-size: 1rem; /* Decrease the font size for mobile */
-      align-items: center; /* Center the links */
-    }
-  
-    .nav-links1 li {
-      margin: 0.5rem 0; /* Add some spacing between the links */
-    }
+
+  .about-container {
+    flex-wrap: wrap;
   }
-  
-  @media screen and (max-width: 600px) {
-  
-    #profile {
-      display: flex;
-      flex-direction: column; 
-      justify-content: center;
-      align-items: center; 
-      margin: 0 auto;
-      width: 100%; /* Use full width */
-    }
-  
-    section_pic-container {
-      width: 80vw; /* Responsive width */
-      height: auto; /* Allow height to adjust */
-      margin: 0; /* Remove margins */
+
+  #contact,
+  #hackathons {
+    height: fit-content;
   }
-  
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    margin: 0 0.1rem;
+    gap: 2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  #profile {
+    justify-content: center;
+    margin: 0 5%;
+    max-width: 90vw;
+  }
+
+  #section,
+  .section-container {
+    height: fit-content;
+    justify-content: center;
+  }
+
+  section {
+    margin: 0 5%;
+    width: 100%;
+    max-width: 90vw;
+  }
+
+  .section-container {
+    margin: 0 auto;
+  }
+
+  .details-containers {
+    font-size: 1.1rem;
+    /* Slightly smaller text */
+    padding: 1.5rem;
+    max-width: 80vw;
+  }
+
+  .about_pic-container {
+    width: 80vw;
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .section__text {
+    margin: 0 5%;
+    width: max-content;
+    width: 85vw;
+  }
+
+  .education {
+    margin: 0 0.5rem;
+  }
+
+  .education-item {
+    max-width: 90vw;
+  }
+
+  #about {
+    max-width: 90vw;
+  }
+
+  .education-item {
+    width: fit-content;
+    padding: 1rem;
+  }
+
+  .skills {
+    padding: 1rem;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .skills-section {
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 95vw;
+  }
+
+  .skills-subsection {
+    max-width: 80vw;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  /* Project */
+
+  .half_container {
+    flex-direction: column; /* Stack containers vertically on small screens */
+    align-items: center; /* Center align items */
+    gap: 1rem; /* Reduce gap between containers */
+  }
+
+  .container {
+    width: 60vw; /* Make containers take more width on smaller screens */
+  }
+
+  .container img {
+    height: 150px; /* Adjust image height for smaller screens */
+  }
+
+  .container h2 {
+    font-size: 1.25rem; /* Reduce font size for headings */
+  }
+
+  .container p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .Full_container h3 {
+    font-size: 1.75rem; /* Reduce heading font size */
+    margin: 2rem 0; /* Adjust margin for the heading */
+  }
+
+  #hackathons {
+    max-width: 83vw;
+    margin: 0 1rem;
+    justify-content: center;
+  }
+
+  .timeline-item-left-visible,
+  .timeline-item-right-visible {
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 15px;
+    /* Adjust padding as needed */
+    width: 100%;
+    /* Use full width of the parent */
+    max-width: 100%;
+    /* Prevent it from exceeding the viewport */
+    margin: 0 10px;
+    /* Add some margin for spacing */
+    box-sizing: border-box;
+    /* Include padding in the total width */
+  }
+
+  .contact-container {
+    flex-direction: column;
+    /* Stack items vertically */
+    width: 100%;
+    /* Full width of the screen */
+    box-shadow: none;
+    /* Reduce box-shadow for mobile */
+    padding: 1rem;
+    /* Add padding for a mobile-friendly layout */
+    border-radius: 5px;
+  }
+
+  .timeline::after {
+    left: 20px;
+    /* Adjusted for better alignment */
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 0.2rem;
+    /* Reduced padding for better fit */
+  }
+
+  .timeline-item.right {
+    left: 0%;
+    /* Keeps right items aligned */
+  }
+
+  .content::after {
+    left: -10px;
+    /* Adjusted for better positioning */
+  }
+
+  .contact-item {
+    margin: 0.5rem 0;
+    /* Reduce the margin for mobile */
+    width: 100%;
+    /* Make the contact items take full width */
+    justify-content: flex-start;
+  }
+
+  .nav-links1 {
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 1rem;
+    /* Reduce the gap between items */
+    font-size: 1rem;
+    /* Decrease the font size for mobile */
+    align-items: center;
+    /* Center the links */
+  }
+
+  .nav-links1 li {
+    margin: 0.5rem 0;
+    /* Add some spacing between the links */
+  }
+
+  footer {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    /* Use full width */
+  }
+
+  section_pic-container {
+    width: 80vw;
+    /* Responsive width */
+    height: auto;
+    /* Allow height to adjust */
+    margin: 0;
+    /* Remove margins */
+  }
+
   #Profile-Pic {
-      width: 100%; /* Full width of the container */
-      height: 100%; /* Fixed height for rectangular shape */
-      object-fit: cover; /* Maintain aspect ratio while covering the area */
-      border-radius: 50%; /* Optional: rounded corners */
+    width: 100%;
+    /* Full width of the container */
+    height: 100%;
+    /* Fixed height for rectangular shape */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the area */
+    border-radius: 50%;
+    /* Optional: rounded corners */
   }
-    .timeline::after {
-      left: 31px;
-    }
-  
-    .timeline-item {
-      width:70uw;
-      margin: 0 auto;
-    }
-  
-    .timeline-item.right {
-      left: 0%;
-    }
-  
-    .content::after {
-      left: -16px;
-    }
-  
-    .content {
-      padding: 10px; /* Adjust padding for smaller screens */
-      width: 80vw; /* Full width */
-      max-width: 100%; /* Ensure it doesn't exceed the viewport */
-      margin: 0; /* Remove margins to prevent overflow */
-      box-sizing: border-box; /* Include padding in the total width */
-    }
-  
-    body {
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-  
-    
+
+  .timeline::after {
+    left: 31px;
   }
-  
+
+  .timeline-item {
+    width: 70uw;
+    margin: 0 auto;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+  }
+
+  .content::after {
+    left: -16px;
+  }
+
+  .content {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+    width: 80vw;
+    /* Full width */
+    max-width: 100%;
+    /* Ensure it doesn't exceed the viewport */
+    margin: 0;
+    /* Remove margins to prevent overflow */
+    box-sizing: border-box;
+    /* Include padding in the total width */
+  }
+
+  body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+  }
+}

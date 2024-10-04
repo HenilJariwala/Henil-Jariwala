@@ -1,300 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henil Jariwala</title>
-    <link rel="icon" href="./Assests/WhatsApp Image 2024-09-18 at 22.24.02_12d9e4bf.jpg">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Henil Jariwala</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Hackathons">Hackathons</a></li>
-          
-          <!-- <li><a href="#Projects">Projects</a></li> -->
-          
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Henil Jariwala</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Hackathons">Hackathons</a></li>
 
-          <!-- <li><a href="#Projects">Projects</a></li> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Henil Jariwala</title>
+  <link rel="icon" href="./Assests/WhatsApp Image 2024-09-18 at 22.24.02_12d9e4bf.jpg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-          <li><a href="#Contact">Contact</a></li>
-        </div>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Henil Jariwala</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Hackathons">Hackathons</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Henil Jariwala</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section_pic-container">
-        <img
-          src="./Assests/WhatsApp Image 2024-09-18 at 22.18.35_937c424c.jpg"
-          alt="Henil Jariwala Profile Pic"
-          id="Profile-Pic"
-        />
+      <div class="menu-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Hackathons">Hackathons</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </div>
-      <div class="section__text">
-        <p class="section__text_p1">Hello, I'm</p>
-        <h1 class="title">Henil Jariwala</h1>
-        <p class="section__text_p2">Computer Science Undergraduate</p>
-        <p class="section__text_p3">
-          Seeking Co-op opportunities in Summer 2025
-        </p>
-        <div class="btn_contaniner">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./Assests/Henil Jariwala.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href('./#contact')">
-            Contact Info
-          </button>
-        </div>
-        <div id="social_container">
-          <img
-            src="./Assests/linkedin.png"
-            alt="My linkedin profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/heniljjariwala11/', '_blank')"
-          />
-          <img
-            src="./Assests/github.png"
-            alt="My github profile"
-            class="icon"
-            onclick="window.open('https://github.com/HenilJariwala', '_blank')"
-          />
-        </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./Assests/WhatsApp Image 2024-09-18 at 22.18.35_937c424c.jpg" alt="Henil Jariwala Profile Pic"
+        id="Profile-Pic" />
+    </div>
+    <div class="section__text">
+      <p class="section__text_p1">Hello, I'm</p>
+      <h1 class="title">Henil Jariwala</h1>
+      <p class="section__text_p2">Computer Science Undergraduate</p>
+      <p class="section__text_p3">
+        Seeking Co-op opportunities in Summer 2025
+      </p>
+      <div class="btn_contaniner">
+        <button class="btn btn-color-2" onclick="window.open('./Assests/Henil Jariwala.pdf')">
+          Download Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href('./#contact')">
+          Contact Info
+        </button>
       </div>
-    </section>
-    <!-- About -->
-    <section id="about">
-      <!-- <p class="about-tex">Get to Know</p> -->
-      <h1 class="title">About Me</h1>
-      <div class="section_container">
-        <div class="about_pic-container">
-          <img
-            src="./Assests/WhatsApp Image 2024-09-18 at 22.24.02_12d9e4bf.jpg"
-            alt="Profile Picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-containers">
-          <div class="about-container">
-            <div class="details-containers">
-              I’m a computer science undergraduate with hands-on experience in
-              coding languages such as Java, Python, C, C++, HTML, CSS, and
-              JavaScript. Currently, I’m expanding my skill set by learning
-              .NET, React, and npm, while exploring modern technologies. With a
-              passion for problem-solving and software engineering, I’m
-              committed to continuous learning and eager to contribute to
-              innovative projects that drive technological advancement.
+      <div id="social_container">
+        <img src="./Assests/linkedin.png" alt="My linkedin profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/heniljjariwala11/', '_blank')" />
+        <img src="./Assests/github.png" alt="My github profile" class="icon"
+          onclick="window.open('https://github.com/HenilJariwala', '_blank')" />
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about">
+    <!-- <p class="about-tex">Get to Know</p> -->
+    <h1 class="title">About Me</h1>
+    <div class="section_container">
+      <div class="about_pic-container">
+        <img src="./Assests/WhatsApp Image 2024-09-18 at 22.24.02_12d9e4bf.jpg" alt="Profile Picture"
+          class="about-pic" />
+      </div>
+      <div class="about-details-containers">
+        <div class="about-container">
+          <div class="details-containers">
+            I’m a computer science undergraduate with hands-on experience in
+            coding languages such as Java, Python, C, C++, HTML, CSS, and
+            JavaScript. Currently, I’m expanding my skill set by learning
+            .NET, React, and npm, while exploring modern technologies. With a
+            passion for problem-solving and software engineering, I’m
+            committed to continuous learning and eager to contribute to
+            innovative projects that drive technological advancement.
+          </div>
+          <div class="education">
+            <div class="education-item">
+              <img src="./Assests/school.png" alt="School Icon" class="icon" />
+              <h3>Metas Adventist School</h3>
+              <p>
+                89% Grade <br />
+                Major in Computer Science
+              </p>
             </div>
-            <div class="education">
-              <div class="education-item">
-                <img
-                  src="./Assests/school.png"
-                  alt="School Icon"
-                  class="icon"
-                />
-                <h3>Metas Adventist School</h3>
-                <p>
-                  89% Grade <br />
-                  Major in Computer Science
-                </p>
-              </div>
-              <div class="education-item">
-                <img
-                  src="./Assests/mortarboard.png"
-                  alt="College Icon"
-                  class="icon"
-                />
-                <h3>Conestoga College</h3>
-                <p>
-                  BCompSc <br />
-                  Expected Graduation 2027
-                </p>
-              </div>
+            <div class="education-item">
+              <img src="./Assests/mortarboard.png" alt="College Icon" class="icon" />
+              <h3>Conestoga College</h3>
+              <p>
+                BCompSc <br />
+                Expected Graduation 2027
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Skills -->
-    <section id="Skills" ="skills-section">
-      <h1 class="title">Skills</h1>
-      <div class="skills-subsection">
-        <h1>Programming</h1>
-        <div class="skills">
-          <p>
-            <img
-              src="./Assests/Programing/programming.png"
-              alt="Programming "
-              class="icon1"
-            />
-            OOP
-          </p>
-          <p>
-            <img
-              src="./Assests/Programing/ml.png"
-              alt="Machine Learning "
-              class="icon1"
-            />
-            ML
-          </p>
-          <p>
-            <img
-              src="./Assests/Programing/algorithm.png"
-              alt="DSA"
-              class="icon1"
-            />
-            DSA
-          </p>
-          <p>
-            <img src="./Assests/Programing/sdlc.png" alt="SDLC" class="icon1" />
-            SDLC
-          </p>
-        </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section id="Skills"="skills-section">
+    <h1 class="title">Skills</h1>
+    <div class="skills-subsection">
+      <h1>Programming</h1>
+      <div class="skills">
+        <p>
+          <img src="./Assests/Programing/programming.png" alt="Programming " class="icon1" />
+          OOP
+        </p>
+        <p>
+          <img src="./Assests/Programing/ml.png" alt="Machine Learning " class="icon1" />
+          ML
+        </p>
+        <p>
+          <img src="./Assests/Programing/algorithm.png" alt="DSA" class="icon1" />
+          DSA
+        </p>
+        <p>
+          <img src="./Assests/Programing/sdlc.png" alt="SDLC" class="icon1" />
+          SDLC
+        </p>
       </div>
-      <div class="skills-subsection">
-        <h1>FrontEnd</h1>
-        <div class="skills">
-          <p>
-            <img src="./Assests/Frontend/css-3.png" alt="CSS " class="icon1" />
-            CSS
-          </p>
-          <p>
-            <img src="./Assests/Frontend/html.png" alt="HTML" class="icon1" />
-            HTML
-          </p>
-          <p>
-            <img
-              src="./Assests/Frontend/java-script.png"
-              alt="JS "
-              class="icon1"
-            />
-            JavaScript
-          </p>
-          <p>
-            <img
-              src="./Assests/Frontend/material ui.png"
-              alt="MUI "
-              class="icon1"
-            />
-            MUI
-          </p>
-          <p>
-            <img
-              src="./Assests/Frontend/Nextjs.png"
-              alt="Nextjs "
-              class="icon1"
-            />
-            Next.js
-          </p>
-          <p>
-            <img
-              src="./Assests/Frontend/react.png"
-              alt="Reactjs "
-              class="icon1"
-            />
-            React.js
-          </p>
-        </div>
+    </div>
+    <div class="skills-subsection">
+      <h1>FrontEnd</h1>
+      <div class="skills">
+        <p>
+          <img src="./Assests/Frontend/css-3.png" alt="CSS " class="icon1" />
+          CSS
+        </p>
+        <p>
+          <img src="./Assests/Frontend/html.png" alt="HTML" class="icon1" />
+          HTML
+        </p>
+        <p>
+          <img src="./Assests/Frontend/java-script.png" alt="JS " class="icon1" />
+          JavaScript
+        </p>
+        <p>
+          <img src="./Assests/Frontend/material ui.png" alt="MUI " class="icon1" />
+          MUI
+        </p>
+        <p>
+          <img src="./Assests/Frontend/Nextjs.png" alt="Nextjs " class="icon1" />
+          Next.js
+        </p>
+        <p>
+          <img src="./Assests/Frontend/react.png" alt="Reactjs " class="icon1" />
+          React.js
+        </p>
       </div>
-      <div class="skills-subsection">
-        <h1>Backend</h1>
-        <div class="skills">
-          <p>
-            <img src="./Assests/backend/c-logo.png" alt="C/C++" class="icon1" />
-            C/C++
-          </p>
-          <p>
-            <img
-              src="./Assests/backend/firebase.png"
-              alt="Firebase"
-              class="icon1"
-            />
-            Firebase
-          </p>
-          <p>
-            <img src="./Assests/backend/java.png" alt="Java" class="icon1" />
-            Java
-          </p>
-          <p>
-            <img
-              src="./Assests/backend/nodejs.jpeg"
-              alt="Nodejs"
-              class="icon1"
-            />
-            Node.js
-          </p>
-          <p>
-            <img
-              src="./Assests/backend/python.png"
-              alt="Python"
-              class="icon1"
-            />
-            Python
-          </p>
-        </div>
+    </div>
+    <div class="skills-subsection">
+      <h1>Backend</h1>
+      <div class="skills">
+        <p>
+          <img src="./Assests/backend/c-logo.png" alt="C/C++" class="icon1" />
+          C/C++
+        </p>
+        <p>
+          <img src="./Assests/backend/firebase.png" alt="Firebase" class="icon1" />
+          Firebase
+        </p>
+        <p>
+          <img src="./Assests/backend/java.png" alt="Java" class="icon1" />
+          Java
+        </p>
+        <p>
+          <img src="./Assests/backend/nodejs.jpeg" alt="Nodejs" class="icon1" />
+          Node.js
+        </p>
+        <p>
+          <img src="./Assests/backend/python.png" alt="Python" class="icon1" />
+          Python
+        </p>
       </div>
-      <div class="skills-subsection">
-        <h1>Other</h1>
-        <div class="skills">
-          <p>
-            <img src="./Assests/Other/adobe.png" alt="Adobe" class="icon1" />
-            Adobe
-          </p>
+    </div>
+    <div class="skills-subsection">
+      <h1>Other</h1>
+      <div class="skills">
+        <p>
+          <img src="./Assests/Other/adobe.png" alt="Adobe" class="icon1" />
+          Adobe
+        </p>
 
-          <p>
-            <img src="./Assests/Other/azure.png" alt="Azure" class="icon1" />
-            Azure
-          </p>
+        <p>
+          <img src="./Assests/Other/azure.png" alt="Azure" class="icon1" />
+          Azure
+        </p>
 
-          <p>
-            <img src="./Assests/Other/cisco.png" alt="cisco" class="icon1" />
-            CISCO
-          </p>
-          <p>
-            <img
-              src="./Assests/Other/microsoft.png"
-              alt="microsoft"
-              class="icon1"
-            />
-            Microsoft
-          </p>
-          <p>
-            <img
-              src="./Assests/Other/powerbi.png"
-              alt="powerbi"
-              class="icon1"
-            />
-            Power BI
-          </p>
-          <p>
-            <img src="./Assests/Other/visio.png" alt="Visio" class="icon1" />
-            Visio
-          </p>
+        <p>
+          <img src="./Assests/Other/cisco.png" alt="cisco" class="icon1" />
+          CISCO
+        </p>
+        <p>
+          <img src="./Assests/Other/microsoft.png" alt="microsoft" class="icon1" />
+          Microsoft
+        </p>
+        <p>
+          <img src="./Assests/Other/powerbi.png" alt="powerbi" class="icon1" />
+          Power BI
+        </p>
+        <p>
+          <img src="./Assests/Other/visio.png" alt="Visio" class="icon1" />
+          Visio
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects">
+    <h1 class="title"> Projects </h1>
+
+    <!-- Software Development Section -->
+    <div class="Full_container">
+      <h3>Software Development</h3>
+      <div class="half_container">
+        <!-- First Project -->
+        <div class="container">
+          <img src="./Assests/Poker.jpeg" alt="Poker">
+          <h2>Poker</h2>
+          <div class="code-language">
+            <p class="code">C</p>
+            <p class="code">C++</p>
+          </div>
+          <p>Basic poker game to bet and play</p>
+          <p class="special-text" onclick="window.open('https://github.com/HenilJariwala/Section_3_Group_2.git')">View
+            Code</p>
+        </div>
+
+        <!-- Second Project -->
+        <div class="container">
+          <img src="./Assests/polygon checker.jpg" alt="Polygon checker">
+          <h2>Polygon checker</h2>
+          <div class="code-language">
+            <p class="code">C</p>
+            <p class="code">C++</p>
+          </div>
+          <p>Tool to check if sides form polygons</p>
+          <p class="special-text" onclick="window.open('https://github.com/HenilJariwala/Section_3_Group_2.git')">View
+            Code</p>
+        </div>
+
+        <!-- Third Project -->
+        <div class="container">
+          <img src="./Assests/submarine.jpg" alt="Submarine">
+          <h2>Submarine System</h2>
+          <div class="code-language">
+            <p class="code">Python</p>
+            <p class="code">PyQt</p>
+          </div>
+          <p>System to control Submarine</p>
+          <p class="special-text">In progress...</p>
+        </div>
+
+        <!-- Fourth Project -->
+        <div class="container">
+          <img src="./Assests/quiz.jpg" alt="quiz">
+          <h2>Quiz Game</h2>
+          <div class="code-language">
+            <p class="code">Python</p>
+            <p class="code">HTML</p>
+            <p class="code">CSS</p>
+
+          </div>
+          <p>Quiz generated from API</p>
+          <p class="special-text">In progress...</p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- UI/UX Section -->
+    <div class="Full_container">
+      <h3>UI/UX</h3>
+      <div class="half_container">
+        <div class="container">
+          <img src="./Assests/penny games.jpg" alt="Penny Games">
+          <h2>Penny Games</h2>
+          <div class="code-language">
+            <p class="code">Adobe XD</p>
+          </div>
+          <p>Website to sell Games, Gift Cards, and Software</p>
+          <p class="special-text"
+            onclick="window.open('https://xd.adobe.com/view/1c3d95ca-8091-47ca-bab6-539944d7210d-496e/screen/8d4d459f-bdc9-4efb-a17e-027084dd1fd7/')">
+            View it</p>
+        </div>
+
+        <div class="container">
+          <img src="./Assests/music app.jpeg" alt="Music">
+          <h2>Basic Music App</h2>
+          <div class="code-language">
+            <p class="code">Adobe XD</p>
+          </div>
+          <p>App to listen to music. This was for my final exam and i have made it in an hour</p>
+          <p class="special-text"
+            onclick="window.open('https://xd.adobe.com/view/11b9ca4b-a999-43d0-804d-8021e98661a6-44ea/screen/fa896d4a-6b0c-42f0-95f2-366a3c5d638c')">
+            View it</p>
+        </div>
+
+        <div class="container">
+          <img src="./Assests/mobile safety.png" alt="Mobile safety">
+          <h2>Conestoga Mobile Safety</h2>
+          <div class="code-language">
+              <p class="code">Adobe XD</p>
+          </div>
+          <p>Redesigning the Conestoga Mobile Safety App</p>
+          <p class="special-text" onclick="window.open('https://xd.adobe.com/view/6692552d-d81f-47ce-9c90-8a17409ccd82-33c1/')">
+              View it
+          </p>
+      </div>
+      
+      </div>
+    </div>
+
+
+
     <!-- Hackathons -->
     <section id="Hackathons">
       <h2 class="title">Hackathons</h2>
@@ -332,32 +365,28 @@
           <h3><a href="mailto:heniljjariwala@gmail.com">heniljjariwala@gmail.com</a></h3>
         </div>
         <div class="contact-item"></div>
-        <img
-        src="./Assests/linkedin.png"
-        alt="My linkedin profile"
-        class="icon1"
-        />
-         <h3 class="linkedin-text" onclick="window.open('https://www.linkedin.com/in/heniljjariwala11/', '_blank')" >LinkedIn</h3>
-        </div>
+        <img src="./Assests/linkedin.png" alt="My linkedin profile" class="icon1" />
+        <h3 class="linkedin-text" onclick="window.open('https://www.linkedin.com/in/heniljjariwala11/', '_blank')">
+          LinkedIn</h3>
+      </div>
       </div>
     </section>
     <!-- Footer -->
-    <footer>
-      <nav>
-        <ul class="nav-links1">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Hackathons">Hackathons</a></li>
-          
-          <!-- <li><a href="#Projects">Projects</a></li> -->
-          
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </footer>
+      <footer>
+        <nav>
+          <ul class="nav-links1">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Hackathons">Hackathons</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
 
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  </body>
+</body>
+
 </html>
