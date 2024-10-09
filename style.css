@@ -404,12 +404,12 @@ h1 {
 .icon1 {
   height: 3rem; /* Ensure icon height is consistent */
   width: auto;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: all 3ms ease-in-out;
 }
 
 .icon1:hover {
-  filter: grayscale(0%);
+  opacity: 50%;
 }
 
 .skills-subsection h1 {
@@ -666,4 +666,11 @@ footer {
   text-decoration: underline;
   text-decoration-color: gray;
   text-underline-offset: 1rem;
+}
+
+.nav-links2 {
+  height: fit-content;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
 }

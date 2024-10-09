@@ -214,7 +214,7 @@
   .nav-links1 {
     flex-direction: column;
     /* Stack items vertically */
-    gap: 1rem;
+    gap: 0.5rem;
     /* Reduce the gap between items */
     font-size: 1rem;
     /* Decrease the font size for mobile */
