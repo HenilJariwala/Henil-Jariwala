@@ -232,18 +232,33 @@
     width: auto;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+  }
+
+  #hamburger-nav nav {
+    height: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   #profile {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+
     width: 100%;
     /* Use full width */
+  }
+
+  section {
+    padding-top: 0;
   }
 
   section_pic-container {
@@ -298,6 +313,14 @@
 
   body {
     overflow-x: hidden;
+    text-align: center;
+    margin: 0 auto;
     /* Prevent horizontal scrolling */
+  }
+
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
   }
 }
