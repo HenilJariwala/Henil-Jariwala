@@ -64,7 +64,6 @@
 
   .details-containers {
     font-size: 1.1rem;
-    /* Slightly smaller text */
     padding: 1.5rem;
     max-width: 80vw;
   }
@@ -120,30 +119,30 @@
   /* Project */
 
   .half_container {
-    flex-direction: column; /* Stack containers vertically on small screens */
-    align-items: center; /* Center align items */
-    gap: 1rem; /* Reduce gap between containers */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .container {
-    width: 60vw; /* Make containers take more width on smaller screens */
+    width: 60vw;
   }
 
   .container img {
-    height: 150px; /* Adjust image height for smaller screens */
+    height: 150px;
   }
 
   .container h2 {
-    font-size: 1.25rem; /* Reduce font size for headings */
+    font-size: 1.25rem;
   }
 
   .container p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
+    font-size: 0.9rem;
   }
 
   .Full_container h3 {
-    font-size: 1.75rem; /* Reduce heading font size */
-    margin: 2rem 0; /* Adjust margin for the heading */
+    font-size: 1.75rem;
+    margin: 2rem 0;
   }
 
   #hackathons {
@@ -159,72 +158,60 @@
 
   .content {
     padding: 15px;
-    /* Adjust padding as needed */
     width: 100%;
-    /* Use full width of the parent */
     max-width: 100%;
-    /* Prevent it from exceeding the viewport */
     margin: 0 10px;
-    /* Add some margin for spacing */
     box-sizing: border-box;
-    /* Include padding in the total width */
   }
 
   .contact-container {
     flex-direction: column;
-    /* Stack items vertically */
     width: 100%;
-    /* Full width of the screen */
     box-shadow: none;
-    /* Reduce box-shadow for mobile */
-    padding: 1rem;
-    /* Add padding for a mobile-friendly layout */
+    padding: 0.2rem 1rem;
     border-radius: 5px;
+    gap: 1rem;
   }
 
   .timeline::after {
     left: 20px;
-    /* Adjusted for better alignment */
   }
 
   .timeline-item {
     width: 100%;
     padding: 0.2rem;
-    /* Reduced padding for better fit */
   }
 
   .timeline-item.right {
     left: 0%;
-    /* Keeps right items aligned */
   }
 
   .content::after {
     left: -10px;
-    /* Adjusted for better positioning */
   }
 
   .contact-item {
-    margin: 0.5rem 0;
-    /* Reduce the margin for mobile */
+    margin: 0.5rem 0.5rem;
     width: 100%;
-    /* Make the contact items take full width */
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
   }
 
+  .contact-item a,
+  h3 {
+    font-size: 1.5rem;
+  }
   .nav-links1 {
     flex-direction: column;
-    /* Stack items vertically */
+    padding-left: 0;
     gap: 0.5rem;
-    /* Reduce the gap between items */
     font-size: 1rem;
-    /* Decrease the font size for mobile */
     align-items: center;
-    /* Center the links */
   }
 
   .nav-links1 li {
     margin: 0.5rem 0;
-    /* Add some spacing between the links */
   }
 
   footer {
@@ -252,9 +239,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 100%;
-    /* Use full width */
   }
 
   section {
@@ -263,22 +248,15 @@
 
   section_pic-container {
     width: 80vw;
-    /* Responsive width */
     height: auto;
-    /* Allow height to adjust */
     margin: 0;
-    /* Remove margins */
   }
 
   #Profile-Pic {
     width: 100%;
-    /* Full width of the container */
     height: 100%;
-    /* Fixed height for rectangular shape */
     object-fit: cover;
-    /* Maintain aspect ratio while covering the area */
     border-radius: 50%;
-    /* Optional: rounded corners */
   }
 
   .timeline::after {
@@ -300,22 +278,16 @@
 
   .content {
     padding: 10px;
-    /* Adjust padding for smaller screens */
     width: 80vw;
-    /* Full width */
     max-width: 100%;
-    /* Ensure it doesn't exceed the viewport */
     margin: 0;
-    /* Remove margins to prevent overflow */
     box-sizing: border-box;
-    /* Include padding in the total width */
   }
 
   body {
     overflow-x: hidden;
     text-align: center;
     margin: 0 auto;
-    /* Prevent horizontal scrolling */
   }
 
   nav {
